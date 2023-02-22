@@ -1,0 +1,60 @@
+.portfolio__name_marvel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  & svg {
+    width: 110px;
+    height: 60px;
+  }
+}
+
+.portfolio__name_employees {
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 25px;
+  color: #3d5a80;
+  font-style: italic;
+}
+
+.portfolio__name_filmoteka {
+  font-family: 'Roboto Condensed';
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.portfolio__name_ice-cream svg {
+  width: 55px;
+  height: 55px;
+}
+
+.logo-web {
+  color: #2196f3;
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.header-logo__studio {
+  color: #000;
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.portfolio__name_portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 30px;
+  color: #394149;
+}

@@ -1,0 +1,37 @@
+.page-footer {
+  background-color: #212121;
+  padding-bottom: 83px;
+  padding-top: 65px;
+}
+
+.contacts {
+  &__social-media-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  &__social-media-icon {
+    width: 40px;
+    height: 40px;
+    fill: #F6F6F6;
+  }
+
+  &__mail {
+    text-align: center;
+    color: #F6F6F6;
+  }
+
+  &__resume {
+    margin: 55px auto 0 auto;
+    display: block;
+    width: 100px;
+    text-align: center;
+    color: #F6F6F6;
+    padding: 10px;
+    border: 2px solid #F6F6F6;
+    border-radius: 15px;
+    font-weight: 500;
+  }
+}
