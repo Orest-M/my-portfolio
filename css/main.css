@@ -335,8 +335,8 @@ ul {
 
 .page-footer {
   background-color: #212121;
-  padding-bottom: 83px;
-  padding-top: 65px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .contacts__social-media-list {
@@ -355,7 +355,7 @@ ul {
   color: #F6F6F6;
 }
 .contacts__resume {
-  margin: 55px auto 0 auto;
+  margin: 40px auto 0 auto;
   display: block;
   width: 100px;
   text-align: center;
