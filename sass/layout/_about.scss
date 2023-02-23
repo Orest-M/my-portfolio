@@ -1,8 +1,8 @@
 .about-me {
-  padding-top: 81px;
   padding-bottom: 76px;
-  width: 689px;
   margin-left: auto;
+  margin-right: 150px;
+  width: 470px;
 
   &__title {
     font-weight: 500;
@@ -11,7 +11,7 @@
     letter-spacing: 0.14em;
     color: #FFFFFF;
     margin-bottom: 12px;
-    opacity: 0.6;
+    text-align: center;
   }
 
   &__text {
@@ -20,6 +20,7 @@
     line-height: 30px;
     letter-spacing: 0.14em;
     color: #FFFFFF;
-    opacity: 0.6;
+    opacity: 0.8;
+    text-align: center;
   }
 }

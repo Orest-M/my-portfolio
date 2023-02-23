@@ -1,12 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #000;
   font-family: 'Montserrat', sans-serif;
-}
-
-main {
-  background-image: url('../images/main.jpg');
+  background-image: url('../images/body-line.png');
   background-size: cover;
 }
 

@@ -1,40 +1,13 @@
 .page-header {
-  padding-bottom: 99px;
   padding-top: 65px;
-  background-image: url('../images/header.jpg');
-  background-size: cover;
 
   &__navigation {
     display: none;
-  }
-
-  &__name {
-    padding-left: 56px;
-  }
-
-  &__title {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 70px;
-    line-height: 85px;
-    color: #FFFFFF;
-    opacity: 0.6;
-    margin-bottom: 23px;
-  }
-
-  &__text {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 37px;
-    letter-spacing: 0.14em;
-    color: #FFFFFF;
-    opacity: 0.6;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .page-header {
-    
     &__navigation {
       display: block;
 
@@ -42,8 +15,7 @@
         display: flex;
         justify-content: space-around;
         padding-bottom: 33px;
-        margin-bottom: 126px;
-        border-bottom: 2px solid #808080;;      
+        border-bottom: 2px solid #808080;      
       }
 
       &-item {
@@ -59,10 +31,10 @@
         font-size: 25px;
         line-height: 30px;
         letter-spacing: 0.14em;
-        color: #808080;
+        color: #fff;
 
-        &.current {
-          color: #fff;
+        &:hover {
+          color: #CF8F45;
         }
       }
     }

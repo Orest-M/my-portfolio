@@ -9,8 +9,7 @@
     font-weight: 500;
     font-size: 70px;
     line-height: 85px;
-    color: #FFFFFF;
-    opacity: 0.5;
+    color: #fff;
   }
 
   &__list {
@@ -35,6 +34,15 @@
 
     &:hover {
       transform: scale(1.05);
+      border-color: #CF8F45;
+    }
+
+    &:hover .portfolio__name {
+      color:#CF8F45;
+    }
+
+    &:hover .portfolio__name_marvel svg, &:hover .portfolio__name_ice-cream svg {
+      fill: #CF8F45;
     }
   }
 

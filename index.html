@@ -19,68 +19,79 @@
         <nav class="page-header__navigation">
           <ul class="page-header__navigation-list list">
             <li class="page-header__navigation-item">
-              <a href="" class="page-header__navigation-link link current"
+              <a href="#home" class="page-header__navigation-link link current"
                 >Home</a
               >
             </li>
             <li class="page-header__navigation-item">
-              <a href="" class="page-header__navigation-link link">Skills</a>
+              <a href="#skills" class="page-header__navigation-link link"
+                >Skills</a
+              >
             </li>
             <li class="page-header__navigation-item">
-              <a href="" class="page-header__navigation-link link">Portfolio</a>
+              <a href="#portfolio" class="page-header__navigation-link link"
+                >Portfolio</a
+              >
             </li>
             <li class="page-header__navigation-item">
-              <a href="" class="page-header__navigation-link link">Contacts</a>
+              <a href="#contacts" class="page-header__navigation-link link"
+                >Contacts</a
+              >
             </li>
           </ul>
         </nav>
 
-        <div class="page-header__name">
-          <h1 class="page-header__title">
-            Orest <br />
-            Mykhalchuk
-          </h1>
-          <p class="page-header__text">Front-end developer</p>
+        <div class="mobile-menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
         </div>
 
-        <div class="about-me">
-          <h2 class="about-me__title">About me</h2>
-          <p class="about-me__text">
-            Hi, I'm Orest – Front-end developer from Kyiv. I'm interested in
-            development and everything connected with it. Ready to implement
-            excellent projects with wonderful people.
-          </p>
-        </div>
+        <nav class="mobile-menu">
+          <ul class="mobile-menu__nav list">
+            <li class="mobile-menu__nav-item current">
+              <a href="#" class="mobile-menu__nav-link link">Home</a>
+            </li>
+
+            <li class="mobile-menu__nav-item">
+              <a href="#" class="mobile-menu__nav-link link">Skills</a>
+            </li>
+
+            <li class="mobile-menu__nav-item">
+              <a href="#" class="mobile-menu__nav-link link">Portfolio</a>
+            </li>
+
+            <li class="mobile-menu__nav-item">
+              <a href="#" class="mobile-menu__nav-link link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-
-      <div class="mobile-menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-      </div>
-
-      <nav class="mobile-menu">
-        <ul class="mobile-menu__nav list">
-          <li class="mobile-menu__nav-item current">
-            <a href="#" class="mobile-menu__nav-link link">Home</a>
-          </li>
-
-          <li class="mobile-menu__nav-item">
-            <a href="#" class="mobile-menu__nav-link link">Skills</a>
-          </li>
-
-          <li class="mobile-menu__nav-item">
-            <a href="#" class="mobile-menu__nav-link link">Portfolio</a>
-          </li>
-
-          <li class="mobile-menu__nav-item">
-            <a href="#" class="mobile-menu__nav-link link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
     </header>
+
     <main>
-      <section class="skills">
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="hero__name">
+            <h1 class="hero__title">
+              Orest <br />
+              Mykhalchuk
+            </h1>
+            <p class="hero__text">Front-end developer</p>
+          </div>
+
+          <div class="about-me">
+            <h2 class="about-me__title">About me</h2>
+            <p class="about-me__text">
+              Hi, I'm Orest – Front-end developer from Kyiv. <br />
+              I'm interested in development and everything connected with it.
+              <br />
+              Ready to implement excellent projects with wonderful people.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="skills" id="skills">
         <div class="container">
           <h2 class="skills__title">Skills</h2>
 
@@ -139,7 +150,7 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <h2 class="portfolio__title">Portfolio</h2>
 
@@ -194,7 +205,10 @@
           </ul>
         </div>
       </section>
-      <section class="contacts">
+    </main>
+
+    <footer>
+      <section class="contacts" id="contacts">
         <div class="container">
           <a
             href="./Orest_Mykhalchuk_frontend_developer(React).pdf"
@@ -232,7 +246,7 @@
           >
         </div>
       </section>
-    </main>
+    </footer>
 
     <script src="./js/index.js"></script>
   </body>

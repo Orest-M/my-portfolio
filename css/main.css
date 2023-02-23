@@ -6,15 +6,16 @@
   --primary-transition-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #000;
   font-family: "Montserrat", sans-serif;
-}
-
-main {
-  background-image: url("../images/main.jpg");
+  background-image: url("../images/body-line.png");
   background-size: cover;
 }
 
@@ -75,41 +76,20 @@ ul {
 .portfolio__name_marvel svg {
   width: 189px;
   height: 73px;
+  fill: #fff;
 }
 
 .portfolio__name_ice-cream svg {
   width: 79px;
   height: 86px;
+  fill: #fff;
 }
 
 .page-header {
-  padding-bottom: 99px;
   padding-top: 65px;
-  background-image: url("../images/header.jpg");
-  background-size: cover;
 }
 .page-header__navigation {
   display: none;
-}
-.page-header__name {
-  padding-left: 56px;
-}
-.page-header__title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 70px;
-  line-height: 85px;
-  color: #FFFFFF;
-  opacity: 0.6;
-  margin-bottom: 23px;
-}
-.page-header__text {
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 37px;
-  letter-spacing: 0.14em;
-  color: #FFFFFF;
-  opacity: 0.6;
 }
 
 @media screen and (min-width: 1200px) {
@@ -120,7 +100,6 @@ ul {
     display: flex;
     justify-content: space-around;
     padding-bottom: 33px;
-    margin-bottom: 126px;
     border-bottom: 2px solid #808080;
   }
   .page-header__navigation-item {
@@ -134,12 +113,35 @@ ul {
     font-size: 25px;
     line-height: 30px;
     letter-spacing: 0.14em;
-    color: #808080;
-  }
-  .page-header__navigation-link.current {
     color: #fff;
   }
+  .page-header__navigation-link:hover {
+    color: #CF8F45;
+  }
 }
+.hero {
+  padding-top: 120px;
+}
+.hero__name {
+  padding-left: 56px;
+}
+.hero__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 66px;
+  color: #FFFFFF;
+  margin-bottom: 23px;
+}
+.hero__text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.14em;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
 .mobile-menu-btn {
   position: absolute;
   z-index: 3;
@@ -226,10 +228,10 @@ ul {
   }
 }
 .about-me {
-  padding-top: 81px;
   padding-bottom: 76px;
-  width: 689px;
   margin-left: auto;
+  margin-right: 150px;
+  width: 470px;
 }
 .about-me__title {
   font-weight: 500;
@@ -238,7 +240,7 @@ ul {
   letter-spacing: 0.14em;
   color: #FFFFFF;
   margin-bottom: 12px;
-  opacity: 0.6;
+  text-align: center;
 }
 .about-me__text {
   font-weight: 400;
@@ -246,7 +248,8 @@ ul {
   line-height: 30px;
   letter-spacing: 0.14em;
   color: #FFFFFF;
-  opacity: 0.6;
+  opacity: 0.8;
+  text-align: center;
 }
 
 .skills {
@@ -258,8 +261,7 @@ ul {
   font-weight: 500;
   font-size: 70px;
   line-height: 85px;
-  color: #FFFFFF;
-  opacity: 0.5;
+  color: #fff;
   margin-bottom: 75px;
 }
 .skills__list {
@@ -272,6 +274,7 @@ ul {
 .skills__icon {
   width: 128px;
   height: 128px;
+  fill: #fff;
 }
 
 .portfolio {
@@ -285,8 +288,7 @@ ul {
   font-weight: 500;
   font-size: 70px;
   line-height: 85px;
-  color: #FFFFFF;
-  opacity: 0.5;
+  color: #fff;
 }
 .portfolio__list {
   display: flex;
@@ -309,6 +311,13 @@ ul {
 }
 .portfolio__card:hover {
   transform: scale(1.05);
+  border-color: #CF8F45;
+}
+.portfolio__card:hover .portfolio__name {
+  color: #CF8F45;
+}
+.portfolio__card:hover .portfolio__name_marvel svg, .portfolio__card:hover .portfolio__name_ice-cream svg {
+  fill: #CF8F45;
 }
 .portfolio__name {
   text-align: center;
@@ -331,7 +340,6 @@ ul {
   color: #F6F6F6;
   padding: 10px 28px;
   width: max-content;
-  opacity: 0.6;
   border: 3px solid #FFFFFF;
   border-radius: 12px;
   font-weight: 500;
@@ -342,6 +350,8 @@ ul {
 }
 .contacts__resume:hover {
   transform: scale(1.05);
+  color: #CF8F45;
+  border-color: #CF8F45;
 }
 .contacts__social-media-list {
   display: flex;
@@ -352,12 +362,12 @@ ul {
 .contacts__social-media-icon {
   width: 70px;
   height: 70px;
-  fill: #F6F6F6;
-  opacity: 0.6;
+  fill: #fff;
   transition: all 0.2s ease-in-out;
 }
 .contacts__social-media-icon:hover {
   transform: scale(1.1);
+  fill: #CF8F45;
 }
 .contacts__mail {
   text-align: center;
@@ -365,5 +375,7 @@ ul {
   font-size: 30px;
   line-height: 37px;
   color: #FFFFFF;
-  opacity: 0.6;
+}
+.contacts__mail:hover {
+  color: #CF8F45;
 }/*# sourceMappingURL=main.css.map */
