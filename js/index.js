@@ -2,10 +2,12 @@ const menuBtn = document.querySelector('.mobile-menu-btn');
 const menu = document.querySelector('.mobile-menu');
 const menuNav = document.querySelector('.mobile-menu__nav');
 const navItems = document.querySelectorAll('.mobile-menu__nav-item');
+const navLinks = document.querySelectorAll('.mobile-menu__nav-link');
 
 let showMenu = false;
 
 menuBtn.addEventListener('click', toggleMenu);
+navLinks.forEach((item) => item.addEventListener('click', toggleMenu));
 
 function toggleMenu() {
   if (!showMenu) {

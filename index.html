@@ -50,19 +50,23 @@
         <nav class="mobile-menu">
           <ul class="mobile-menu__nav list">
             <li class="mobile-menu__nav-item current">
-              <a href="#" class="mobile-menu__nav-link link">Home</a>
+              <a href="#home" class="mobile-menu__nav-link link">Home</a>
             </li>
 
             <li class="mobile-menu__nav-item">
-              <a href="#" class="mobile-menu__nav-link link">Skills</a>
+              <a href="#skills" class="mobile-menu__nav-link link">Skills</a>
             </li>
 
             <li class="mobile-menu__nav-item">
-              <a href="#" class="mobile-menu__nav-link link">Portfolio</a>
+              <a href="#portfolio" class="mobile-menu__nav-link link"
+                >Portfolio</a
+              >
             </li>
 
             <li class="mobile-menu__nav-item">
-              <a href="#" class="mobile-menu__nav-link link">Contacts</a>
+              <a href="#contacts" class="mobile-menu__nav-link link"
+                >Contacts</a
+              >
             </li>
           </ul>
         </nav>
@@ -155,49 +159,64 @@
           <h2 class="portfolio__title">Portfolio</h2>
 
           <ul class="portfolio__list list">
-            <li class="portfolio__item">
-              <div class="portfolio__card">
-                <p class="portfolio__name portfolio__name_marvel">
-                  <svg class="portfolio__name-marvel-icon">
-                    <use href="./images/symbol-defs.svg#icon-marvel"></use>
+            <li class="portfolio__item" data-id="1">
+              <div class="portfolio__card" data-id="1">
+                <p class="portfolio__name portfolio__name_marvel" data-id="1">
+                  <svg class="portfolio__name-marvel-icon" data-id="1">
+                    <use
+                      href="./images/symbol-defs.svg#icon-marvel"
+                      data-id="1"
+                    ></use>
                   </svg>
                 </p>
               </div>
             </li>
-            <li class="portfolio__item">
-              <div class="portfolio__card">
-                <p class="portfolio__name portfolio__name_filmoteka">
+            <li class="portfolio__item" data-id="2">
+              <div class="portfolio__card" data-id="2">
+                <p
+                  class="portfolio__name portfolio__name_filmoteka"
+                  data-id="2"
+                >
                   Filmoteka
                 </p>
               </div>
             </li>
-            <li class="portfolio__item">
-              <div class="portfolio__card">
-                <p class="portfolio__name portfolio__name_employees">
+            <li class="portfolio__item" data-id="3">
+              <div class="portfolio__card" data-id="3">
+                <p
+                  class="portfolio__name portfolio__name_employees"
+                  data-id="3"
+                >
                   Employees
                 </p>
               </div>
             </li>
-            <li class="portfolio__item">
-              <div class="portfolio__card">
-                <p class="portfolio__name portfolio__name_ice-cream">
-                  <svg>
-                    <use href="./images/symbol-defs.svg#icon-ice-cream"></use>
+            <li class="portfolio__item" data-id="4">
+              <div class="portfolio__card" data-id="4">
+                <p
+                  class="portfolio__name portfolio__name_ice-cream"
+                  data-id="4"
+                >
+                  <svg data-id="4">
+                    <use
+                      href="./images/symbol-defs.svg#icon-ice-cream"
+                      data-id="4"
+                    ></use>
                   </svg>
                 </p>
               </div>
             </li>
-            <li class="portfolio__item">
-              <div class="portfolio__card">
-                <p class="portfolio__name">
-                  <span class="logo-web">Web</span
-                  ><span class="header-logo__studio">Studio</span>
-                </p>
+            <li class="portfolio__item" data-id="5">
+              <div class="portfolio__card" data-id="5">
+                <p class="portfolio__name" data-id="5">WebStudio</p>
               </div>
             </li>
-            <li class="portfolio__item">
-              <div class="portfolio__card">
-                <p class="portfolio__name portfolio__name_portfolio">
+            <li class="portfolio__item" data-id="6">
+              <div class="portfolio__card" data-id="6">
+                <p
+                  class="portfolio__name portfolio__name_portfolio"
+                  data-id="6"
+                >
                   Portfolio
                 </p>
               </div>
@@ -248,6 +267,24 @@
       </section>
     </footer>
 
-    <script src="./js/index.js"></script>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button type="button" class="modal__close">
+          <svg class="modal__close-icon">
+            <use href="./images/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title"></h2>
+        <p class="modal__techs"></p>
+        <p class="modal__desc"></p>
+        <div class="modal__links">
+          <a href="" class="modal__code link">GET CODE</a>
+          <a href="" class="modal__site link">VIEW SITE</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
