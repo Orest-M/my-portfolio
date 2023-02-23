@@ -100,7 +100,7 @@ ul {
   font-size: 70px;
   line-height: 85px;
   color: #FFFFFF;
-  opacity: 0.5;
+  opacity: 0.6;
   margin-bottom: 23px;
 }
 .page-header__text {
@@ -109,6 +109,7 @@ ul {
   line-height: 37px;
   letter-spacing: 0.14em;
   color: #FFFFFF;
+  opacity: 0.6;
 }
 
 @media screen and (min-width: 1200px) {
@@ -237,6 +238,7 @@ ul {
   letter-spacing: 0.14em;
   color: #FFFFFF;
   margin-bottom: 12px;
+  opacity: 0.6;
 }
 .about-me__text {
   font-weight: 400;
@@ -244,6 +246,7 @@ ul {
   line-height: 30px;
   letter-spacing: 0.14em;
   color: #FFFFFF;
+  opacity: 0.6;
 }
 
 .skills {
@@ -328,6 +331,7 @@ ul {
   color: #F6F6F6;
   padding: 10px 28px;
   width: max-content;
+  opacity: 0.6;
   border: 3px solid #FFFFFF;
   border-radius: 12px;
   font-weight: 500;
@@ -349,6 +353,7 @@ ul {
   width: 70px;
   height: 70px;
   fill: #F6F6F6;
+  opacity: 0.6;
   transition: all 0.2s ease-in-out;
 }
 .contacts__social-media-icon:hover {
@@ -360,4 +365,5 @@ ul {
   font-size: 30px;
   line-height: 37px;
   color: #FFFFFF;
+  opacity: 0.6;
 }/*# sourceMappingURL=main.css.map */

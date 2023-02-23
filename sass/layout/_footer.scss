@@ -9,6 +9,7 @@
     color: #F6F6F6;
     padding: 10px 28px;
     width: max-content;
+    opacity: 0.6;
 
     border: 3px solid #FFFFFF;
     border-radius: 12px;
@@ -36,6 +37,7 @@
     width: 70px;
     height: 70px;
     fill: #F6F6F6;
+    opacity: 0.6;
     transition: all .2s ease-in-out;
     
     &:hover {
@@ -49,7 +51,6 @@
     font-size: 30px;
     line-height: 37px;
     color: #FFFFFF;
+    opacity: 0.6;
   }
-
-  
 }
