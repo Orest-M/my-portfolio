@@ -366,8 +366,8 @@ ul {
     gap: 28px;
   }
   .skills__icon {
-    width: 29px;
-    height: 29px;
+    width: 34px;
+    height: 34px;
   }
 }
 @media screen and (min-width: 1200px) {
