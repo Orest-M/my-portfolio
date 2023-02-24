@@ -6,13 +6,6 @@
   --primary-transition-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-body,
-html {
-  width: 100vw;
-  min-width: 100vw;
-  max-width: 100vw;
-}
-
 html {
   scroll-behavior: smooth;
 }
