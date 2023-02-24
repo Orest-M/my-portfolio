@@ -642,7 +642,7 @@ ul {
   padding: 7px 14px;
   transition: all 0.2s ease-in-out;
 }
-.modal__code:hover, .modal__site:hover {
+.modal__code:hover, .modal__code:focus, .modal__site:hover, .modal__site:focus {
   transform: scale(1.05);
   color: #CF8F45;
   border-color: #CF8F45;
@@ -662,4 +662,15 @@ ul {
   height: 25px;
   fill: #fff;
   opacity: 0.8;
+}
+
+@media screen and (max-width: 540px) {
+  .modal {
+    padding: 40px 0;
+    height: 500px;
+  }
+  .modal__title, .modal__techs, .modal__desc {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
