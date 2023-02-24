@@ -251,8 +251,8 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 55px;
-  margin-top: 130px;
-  margin-left: 75px;
+  margin-top: 120px;
+  margin-left: 40px;
   font-weight: 500;
 }
 .mobile-menu__nav-item a {
