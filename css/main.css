@@ -58,7 +58,7 @@ ul {
 
 @media screen and (min-width: 375px) {
   .container {
-    max-width: 400px;
+    max-width: 393px;
   }
 }
 @media screen and (min-width: 1200px) {
