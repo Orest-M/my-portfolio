@@ -44,7 +44,7 @@ const sites = [
     techs: 'JavaScript, HTML, SCSS, Git',
     desc: "As a web developer, having a well-designed and functional portfolio website is essential for showcasing my skills, expertise, and previous projects to potential clients and employers. That's why I decided to develop my own portfolio website that showcases my reflects my personal style. My portfolio website is designed to be user-friendly and visually appealing, with a clean and modern design that emphasizes the projects and experiences that I want to showcase.",
     code: 'https://github.com/Orest-M/my-portfolio',
-    site: 'https://orest-m.github.io/my-portfolio/',
+    site: 'http://orestmykhalchuk.com/',
     id: '6',
   },
 ];
