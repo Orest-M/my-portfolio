@@ -4,14 +4,38 @@
   align-items: center;
   
   & svg {
-    width: 189px;
-    height: 73px;
     fill: #fff;
   }
 }
 
 .portfolio__name_ice-cream svg {
-  width: 79px;
-  height: 86px;
   fill: #fff;
+}
+
+@media screen and (max-width: 1199px) {
+  .portfolio__name_marvel {
+    & svg {
+      width: 80px;
+      height: 32px;
+    }
+  }
+
+  .portfolio__name_ice-cream svg {
+    width: 40px;
+    height: 44px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__name_marvel {
+    & svg {
+      width: 189px;
+      height: 73px;
+    }
+  }
+
+  .portfolio__name_ice-cream svg {
+    width: 79px;
+    height: 86px;
+  }
 }

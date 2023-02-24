@@ -1,9 +1,4 @@
 .about-me {
-  padding-bottom: 76px;
-  margin-left: auto;
-  margin-right: 150px;
-  width: 470px;
-
   &__title {
     font-weight: 500;
     font-size: 30px;
@@ -11,16 +6,75 @@
     letter-spacing: 0.14em;
     color: #FFFFFF;
     margin-bottom: 12px;
-    text-align: center;
   }
 
   &__text {
-    font-weight: 400;
     font-size: 25px;
     line-height: 30px;
     letter-spacing: 0.14em;
     color: #FFFFFF;
     opacity: 0.8;
-    text-align: center;
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .about-me {
+    padding-top: 22px;
+    margin-bottom: 38.5px;
+
+    &__title {
+      font-size: 17px;
+      line-height: 21px;
+      margin-bottom: 22px;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 300;
+    }
+
+    &__line {
+      background: url('../images/gold-line.png') no-repeat;
+      background-size: 100% 100%;
+
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 22px;
+      height: 34.5px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-me {
+    margin-bottom: 200px;
+    padding-bottom: 19px;
+
+    &__div {
+      width: 470px;
+      margin-left: auto;
+      margin-right: 150px;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    &__text {
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+      font-weight: 400;
+    }
+
+    &__line {
+      display: none;
+    }
+  }
+}
+

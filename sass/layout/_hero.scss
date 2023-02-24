@@ -1,18 +1,11 @@
 .hero {
-  padding-top: 120px;
-
   &__title {
     font-weight: 500;
-    font-size: 40px;
-    line-height: 55px;
     color: #FFFFFF;
-    margin-bottom: 23px;
   }
 
   &__text {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
     letter-spacing: 0.14em;
     color: #FFFFFF;
     opacity: 0.8;
@@ -21,32 +14,46 @@
 
 @media screen and (max-width: 1199px) {
   .hero {
+    background: url(../images/mobile-title-bg.png) no-repeat;
+    background-size: 100% 97%;
+
+    &__name {
+    padding-top: 46px;
+    padding-bottom: 53px;
+  }
+
     &__title {
-      text-align: center;
+      font-size: 30px;
+      line-height: 37px;
+      margin-bottom: 8px;
+      opacity: 0.8;
     }
 
     &__text {
-      text-align: center;
+      font-size: 17px;
+      line-height: 21px;
     }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-  
-      &__name {
-        padding-left: 56px;
-      }
-  
-      &__title {
-        font-size: 55px;
-        line-height: 66px;
-      }
-  
-      &__text {
-        font-size: 22px;
-        line-height: 27px;
-        letter-spacing: 0.14em;
-      }
+    padding-top: 120px;
+
+    &__name {
+      padding-left: 56px;
+    }
+
+    &__title {
+      font-size: 55px;
+      line-height: 66px;
+      margin-bottom: 23px;
+    }
+
+    &__text {
+      font-size: 22px;
+      line-height: 27px;
+      letter-spacing: 0.14em;
     }
   }
+}

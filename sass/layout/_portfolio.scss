@@ -1,22 +1,12 @@
 .portfolio {
-  padding-top: 81px;
-  padding-bottom: 108px;
-  color: var(--dark-text-color);
-
   &__title {
-    text-align: center;
-    margin-bottom: 70px;
     font-weight: 500;
-    font-size: 70px;
-    line-height: 85px;
     color: #fff;
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 75px;
-    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -25,23 +15,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 4px solid #5D6570;
     border-radius: 12px;
-    width: 460px;
-    height: 112px;
     cursor: pointer;
     transition: all .2s ease-in-out;
 
-    &:hover {
+    &:hover, &:focus {
       transform: scale(1.05);
       border-color: #CF8F45;
     }
 
-    &:hover .portfolio__name {
+    &:hover .portfolio__name, &:focus .portfolio__name {
       color:#CF8F45;
     }
 
-    &:hover .portfolio__name_marvel svg, &:hover .portfolio__name_ice-cream svg {
+    &:hover .portfolio__name_marvel svg, 
+    &:hover .portfolio__name_ice-cream svg,
+    &:focus .portfolio__name_marvel svg,
+    &:focus .portfolio__name_ice-cream svg {
       fill: #CF8F45;
     }
   }
@@ -51,9 +41,61 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
-    font-size: 50px;
-    line-height: 59px;
     color: #FFFFFF;
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .portfolio {
+    padding-bottom: 30px;
+
+    &__title {
+      font-size: 17px;
+      line-height: 21px;
+      letter-spacing: 0.14em;
+      margin-bottom: 40px;
+    }
+
+    &__list {
+      gap: 21px;
+    }
+
+    &__card {
+      border: 2px solid #5D6570;
+      width: 304px;
+      height: 46px;
+    }
+
+    &__name {
+      font-size: 25px;
+      line-height: 29px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 77px;
+    padding-bottom: 108px;
+
+    &__title {
+      font-size: 70px;
+      line-height: 85px;
+    }
+
+    &__list {
+      gap: 75px;
+    }
+
+    &__card {
+      border: 4px solid #5D6570;
+      width: 460px;
+      height: 112px;
+    }
+
+    &__name {
+      font-size: 50px;
+      line-height: 59px;
+    }
+  }
+}

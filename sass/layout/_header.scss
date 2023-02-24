@@ -1,13 +1,17 @@
-.page-header {
-  padding-top: 65px;
+@media screen and (max-width: 1199px) {
+  .page-header {
+    height: 93px;
 
-  &__navigation {
-    display: none;
+    &__navigation {
+      display: none;
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .page-header {
+    padding-top: 65px;
+
     &__navigation {
       display: block;
 
@@ -27,13 +31,13 @@
       }
 
       &-link {
-        font-weight: 300;
-        font-size: 25px;
-        line-height: 30px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27px;
         letter-spacing: 0.14em;
         color: #fff;
 
-        &:hover {
+        &:hover, &:focus {
           color: #CF8F45;
         }
       }
