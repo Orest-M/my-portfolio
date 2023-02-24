@@ -34,7 +34,7 @@ const sites = [
   {
     title: 'WebStudio',
     techs: 'HTML, CSS, SCSS, JavaScript, Git',
-    desc: 'WebStudio is a landing website that I have designed and developed to showcase the services provided by a web development company called "WebStudio". The main goal of this landing page is to provide visitors with a clear understanding of the services that WebStudio offers and to encourage them to contact the company for further information or to request a quote.',
+    desc: 'WebStudio is a landing website that I have developed to showcase the services provided by a web development company called "WebStudio". The main goal of this landing page is to provide visitors with a clear understanding of the services that WebStudio offers and to encourage them to contact the company for further information or to request a quote.',
     code: 'https://github.com/Orest-M/goit-markup-hw-08',
     site: 'https://orest-m.github.io/goit-markup-hw-08/',
     id: '5',
