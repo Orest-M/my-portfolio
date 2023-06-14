@@ -40,6 +40,14 @@
   .hero {
     padding-top: 120px;
 
+    opacity: 0;
+
+    animation-name: hero-animation;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+
     &__name {
       padding-left: 56px;
     }
@@ -55,5 +63,15 @@
       line-height: 27px;
       letter-spacing: 0.14em;
     }
+  }
+}
+
+@keyframes hero-animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

@@ -159,10 +159,19 @@ ul {
     display: block;
   }
   .page-header__navigation-list {
+    position: relative;
     display: flex;
     justify-content: space-around;
     padding-bottom: 33px;
-    border-bottom: 2px solid #808080;
+  }
+  .page-header__navigation-list::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    height: 2px;
+    width: 100%;
+    background-color: #808080;
+    animation: changeBorder 1.5s;
   }
   .page-header__navigation-item {
     transition: all 0.2s ease-in-out;
@@ -179,6 +188,14 @@ ul {
   }
   .page-header__navigation-link:hover, .page-header__navigation-link:focus {
     color: #CF8F45;
+  }
+}
+@keyframes changeBorder {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
 .hero__title {
@@ -215,6 +232,12 @@ ul {
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 120px;
+    opacity: 0;
+    animation-name: hero-animation;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
   }
   .hero__name {
     padding-left: 56px;
@@ -228,6 +251,14 @@ ul {
     font-size: 22px;
     line-height: 27px;
     letter-spacing: 0.14em;
+  }
+}
+@keyframes hero-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 .mobile-menu-btn {
@@ -347,6 +378,12 @@ ul {
   .about-me {
     margin-bottom: 200px;
     padding-bottom: 19px;
+    animation-name: about-animation;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    opacity: 0;
   }
   .about-me__div {
     width: 470px;
@@ -392,6 +429,14 @@ ul {
 @media screen and (min-width: 1700px) {
   .about-me__div {
     margin-right: 50px;
+  }
+}
+@keyframes about-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 .skills {
