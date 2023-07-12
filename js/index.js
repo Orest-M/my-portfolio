@@ -1,28 +1,27 @@
-const menuBtn = document.querySelector('.mobile-menu-btn');
-const menu = document.querySelector('.mobile-menu');
-const menuNav = document.querySelector('.mobile-menu__nav');
-const navItems = document.querySelectorAll('.mobile-menu__nav-item');
-const navLinks = document.querySelectorAll('.mobile-menu__nav-link');
-
-let showMenu = false;
-
+var menuBtn = document.querySelector('.mobile-menu-btn');
+var menu = document.querySelector('.mobile-menu');
+var menuNav = document.querySelector('.mobile-menu__nav');
+var navItems = document.querySelectorAll('.mobile-menu__nav-item');
+var navLinks = document.querySelectorAll('.mobile-menu__nav-link');
+var body = document.querySelector('body');
+var showMenu = false;
 menuBtn.addEventListener('click', toggleMenu);
-navLinks.forEach((item) => item.addEventListener('click', toggleMenu));
-
+navLinks.forEach(function (item) { return item.addEventListener('click', toggleMenu); });
 function toggleMenu() {
-  if (!showMenu) {
-    menuBtn.classList.add('close');
-    menu.classList.add('show');
-    menuNav.classList.add('show');
-    navItems.forEach((item) => item.classList.add('show'));
-    showMenu = true;
-    document.querySelector('body').style.overflow = 'hidden';
-  } else {
-    menuBtn.classList.remove('close');
-    menu.classList.remove('show');
-    menuNav.classList.remove('show');
-    navItems.forEach((item) => item.classList.remove('show'));
-    showMenu = false;
-    document.querySelector('body').style.overflow = 'auto';
-  }
+    if (!showMenu) {
+        menuBtn.classList.add('close');
+        menu.classList.add('show');
+        menuNav.classList.add('show');
+        navItems.forEach(function (item) { return item.classList.add('show'); });
+        showMenu = true;
+        body.style.overflow = 'hidden';
+    }
+    else {
+        menuBtn.classList.remove('close');
+        menu.classList.remove('show');
+        menuNav.classList.remove('show');
+        navItems.forEach(function (item) { return item.classList.remove('show'); });
+        showMenu = false;
+        body.style.overflow = 'auto';
+    }
 }
