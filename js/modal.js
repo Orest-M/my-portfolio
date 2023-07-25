@@ -47,6 +47,14 @@ var sites = [
         site: 'http://orestmykhalchuk.com/',
         id: '6',
     },
+    {
+        title: 'TaskPro',
+        techs: 'React, Redux Toolkit, Node.js, MongoDB, MUI, Git',
+        desc: 'TaskPro is a user-friendly web application for task management and team collaboration. Serving as an analog to the popular platform Trello, TaskPro offers a seamless and intuitive interface that empowers users to organize their daily tasks, plan their schedules efficiently, and collaborate seamlessly with their teams and friends.',
+        code: 'https://github.com/Fstv-Electro/TaskPro-prj-9',
+        site: 'https://fstv-electro.github.io/TaskPro-prj-9/',
+        id: '7',
+    },
 ];
 var list = document.querySelector('.portfolio__list');
 var backdrop = document.querySelector('.backdrop');
